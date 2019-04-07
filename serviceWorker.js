@@ -8,15 +8,19 @@ function updateStaticCache() {
     .then( cache => {
        cache.addAll([
             '/index.html',
-	    '/static/js/bundle.js',
-	    '/static/js/0.chunk.js',
-	    '/static/js/main.chunk.js',
+	    '/static/css/main.ff896ea7.chunk.css',
+	    '/static/js/2.278c4d8b.chunk.js',
+	    '/static/js/main.e0228600.chunk.js',
 	    '/static/media/facebook.c0cd1382.svg',
 	    '/static/media/instagram.b1c58ee1.svg',
 	    '/static/media/pinterest.d88fe1a0.svg',
 	    '/static/media/twitter.182d5ef4.svg',
 	    '/static/media/youtube.a6372485.svg',
-	    '/manifest.json'
+	    '/manifest.json',
+	       '/flame.png',
+	       '/serviceWorker.js',
+	       '/async-waituntil.js',
+	       '/favicon.ico'
         ]);
 	return cache.addAll([
 		'/',
