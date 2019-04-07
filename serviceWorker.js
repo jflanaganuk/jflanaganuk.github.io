@@ -24,10 +24,6 @@ function updateStaticCache() {
         ]);
 	return cache.addAll([
 		'/',
-		'/static/',
-		'/static/js/',
-		'/static/css/',
-		'/static/media/'
 	]);
     });
 }
