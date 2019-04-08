@@ -35,7 +35,10 @@ function clearOldCaches() {
         return Promise.all(keys
             .filter(key => key.indexOf(version) !== 0)
             .map(key => caches.delete(key))
-        );
+        )
+	.catch((e) => {
+		console.error(e);
+	});
     });
 }
 
