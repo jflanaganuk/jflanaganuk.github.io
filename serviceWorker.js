@@ -4,7 +4,9 @@ if (workbox) {
 	console.log(`Yay! Workbox is loaded 🎉`);
 	workbox.routing.registerRoute(
 		/\.(?:png|jpg|jpeg|svg|gif|js|html|css)$/,
-		new workbox.strategies.NetworkFirst()
+		new workbox.strategies.CacheFirst({
+			cacheName: 'offline-cache',
+		})
 	);
 } else {
 	console.log(`Boo! Workbox didn't load 😬`);
