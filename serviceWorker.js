@@ -6,14 +6,6 @@ if (workbox) {
 	  new RegExp('.*\.js'),
 	  new workbox.strategies.CacheFirst()
 	);
-	workbox.routing.registerRoute(
-	  new RegExp('.*\.css'),
-	  new workbox.strategies.CacheFirst()
-	);
-	workbox.routing.registerRoute(
-	  '/',
-	  new workbox.strategies.CacheFirst()
-	);
 } else {
 	console.log(`Boo! Workbox didn't load 😬`);
 }
