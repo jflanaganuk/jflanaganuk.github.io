@@ -4,6 +4,7 @@ const resourcesToPrecache = [
 	'index.html',
 	'favicon.ico',
 	'flame.png',
+	'flameLarge.png',
 	'static/css/main.ff896ea7.chunk.css',
 	'static/js/2.278c4d8b.chunk.js',
 	'static/js/main.e0228600.chunk.js',
